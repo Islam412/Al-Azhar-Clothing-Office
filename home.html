@@ -9,38 +9,44 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
     <style>
         body {
-            background-color: #e9ecef; /* تغيير خلفية الصفحة */
+            background-color: #fff8e1; 
             color: #212529;
-            font-family: 'Arial', sans-serif; /* تغيير نوع الخط */
+            font-family: 'Arial', sans-serif;
             animation: fadeIn 2s ease-in;
         }
 
         h1, h3 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* تغيير نوع الخط للعناوين */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #b08d57; 
         }
 
         /* Custom Style for Buttons */
         .btn {
-            font-size: 20px;
-            padding: 18px 40px;  /* زيادة حجم الأزرار */
+            font-size: 18px;
+            padding: 16px 35px; 
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            border-radius: 50px; /* جعل الأزرار دائرية */
+            border-radius: 50px;
+            border: 2px solid #d4af37; 
+            transition: transform 0.3s ease; 
         }
 
         .btn-success {
-            background-color: #28a745;
-            border-color: #28a745;
+            background-color: #ffffff; 
+            border-color: #10e65e;
+            color: #10e65e; /* WhatsApp Green */
         }
         .btn-info {
-            background-color: #17a2b8;
-            border-color: #17a2b8;
+            background-color: #ffffff; 
+            border-color: #0088cc; /* Telegram Blue */
+            color: #0088cc;
         }
         .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+            background-color: #ffffff; 
+            border-color: #3b5998; /* Facebook Blue */
+            color: #3b5998;
         }
 
         /* Dark Mode styles */
@@ -50,19 +56,26 @@
                 color: #f8f9fa;
             }
             .btn-success {
-                background-color: #218838;
-                border-color: #1e7e34;
+                background-color: #f1c40f;
+                border-color: #f39c12;
             }
             .btn-info {
-                background-color: #138496;
-                border-color: #117a8b;
+                background-color: #ecf0f1;
+                border-color: #d4af37;
             }
             .btn-primary {
-                background-color: #0069d9;
-                border-color: #0062cc;
+                background-color: #ffffff;
+                border-color: #f39c12;
+                color: #f39c12;
             }
         }
 
+        /* Hover effects for buttons */
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Fullscreen and Image section */
         .full-screen {
             height: 100vh;
             display: flex;
@@ -91,38 +104,45 @@
             height: 202.4px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #007bff; /* إضافة حدود للصورة */
+            border: 5px solid #d4af37;
         }
 
         /* Icon Size Adjustment */
         .fab {
-            font-size: 40px; /* تغيير حجم الأيقونات */
+            font-size: 40px;
         }
 
         /* Style for the circular social media icons */
         .social-media-icon {
-            width: 70px;
-            height: 70px;
+            width: 100px; 
+            height: 100px; 
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            font-size: 35px;
+            font-size: 50px; 
             color: white;
             text-decoration: none;
             transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
         }
 
         /* Specific colors for social icons */
-        .whatsapp-icon { background-color: #25d366; }
+        .whatsapp-icon { background-color: #10e65e; }
         .telegram-icon { background-color: #0088cc; }
         .facebook-icon { background-color: #3b5998; }
 
         /* Add hover effects */
         .social-media-icon:hover {
             opacity: 0.8;
-            transform: scale(1.2); /* تكبير الأيقونات عند التمرير عليها */
+            transform: scale(1.3); 
+        }
+
+        /* Adding animation for all social media icons */
+        .whatsapp-icon:hover, .telegram-icon:hover, .facebook-icon:hover {
+            opacity: 0.8;
+            transform: scale(1.3) rotate(15deg); 
+            transition: transform 0.5s ease, opacity 0.3s ease; 
         }
 
         /* Fade-in animation for image */
@@ -164,25 +184,25 @@
             <!-- Text and Social Media Links Section -->
             <div class="row mt-4">
                 <div class="col-md-8 offset-md-2">
-                    <h3>🌟 أهلا بكم في مكتب الأزهر! للملابس الجاهزة! 🛍️✨</h3>
+                    <h3 style="color: #AFAFAE;">🌟 أهلا بكم في مكتب الأزهر! للملابس الجاهزة! 🛍️✨</h3>
 
                     <!-- Social Media Links -->
                     <div class="mt-4 social-media-links">
                         <!-- WhatsApp -->
                         <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
+                            <i class="fab fa-whatsapp" style="color: #10e65e;"></i> <strong style="color: #10e65e;">WhatsApp</strong>
                             <i class="fas fa-ellipsis-h"></i>
                         </a>
 
                         <!-- Telegram -->
                         <a href="https://t.me/username" target="_blank" class="btn btn-info">
-                            <i class="fab fa-telegram"></i> Telegram
+                            <i class="fab fa-telegram" style="color: #0088cc;"></i> <strong style="color: #0088cc;">Telegram</strong>
                             <i class="fas fa-ellipsis-h"></i>
                         </a>
                         
                         <!-- Facebook -->
                         <a href="https://www.facebook.com/yourprofile" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-facebook"></i> Facebook
+                            <i class="fab fa-facebook" style="color: #3b5998;"></i> <strong style="color: #3b5998;">Facebook</strong>
                             <i class="fas fa-ellipsis-h"></i>
                         </a>
                     </div>
