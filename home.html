@@ -34,19 +34,19 @@
         }
 
         .btn-success {
-            background-color: #ffffff; 
-            border-color: #10e65e;
-            color: #10e65e; /* WhatsApp Green */
+            background-color: #fff; 
+            border-color: #d4af37;
+            color: #f4c542;
         }
         .btn-info {
             background-color: #ffffff; 
-            border-color: #0088cc; /* Telegram Blue */
-            color: #0088cc;
+            border-color: #f1c40f; 
+            color: #d4af37; 
         }
         .btn-primary {
-            background-color: #ffffff; 
-            border-color: #3b5998; /* Facebook Blue */
-            color: #3b5998;
+            background-color: #f8f9fa; 
+            border-color: #d4af37; 
+            color: #d4af37; 
         }
 
         /* Dark Mode styles */
@@ -56,8 +56,8 @@
                 color: #f8f9fa;
             }
             .btn-success {
-                background-color: #f1c40f;
-                border-color: #f39c12;
+                background-color: #ecf0f1;
+                border-color: #f1c40f;
             }
             .btn-info {
                 background-color: #ecf0f1;
@@ -68,14 +68,21 @@
                 border-color: #f39c12;
                 color: #f39c12;
             }
+            .btn-success:hover {
+                background-color: #f1c40f !important;
+                border-color: #d4af37 !important;
+            }
+            .btn-info:hover {
+                background-color: #f1c40f !important;
+                border-color: #d4af37 !important;
+            }
+            .btn-primary:hover {
+                background-color: #f1c40f !important;
+                border-color: #d4af37 !important;
+            }
         }
 
-        /* Hover effects for buttons */
-        .btn:hover {
-            transform: scale(1.05);
-        }
 
-        /* Fullscreen and Image section */
         .full-screen {
             height: 100vh;
             display: flex;
@@ -135,7 +142,8 @@
         /* Add hover effects */
         .social-media-icon:hover {
             opacity: 0.8;
-            transform: scale(1.3); 
+            transform: scale(1.3);
+            background-color: #10e65e;
         }
 
         /* Adding animation for all social media icons */
@@ -143,6 +151,7 @@
             opacity: 0.8;
             transform: scale(1.3) rotate(15deg); 
             transition: transform 0.5s ease, opacity 0.3s ease; 
+            background-color: #10e65e;
         }
 
         /* Fade-in animation for image */
@@ -190,19 +199,19 @@
                     <div class="mt-4 social-media-links">
                         <!-- WhatsApp -->
                         <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success">
-                            <i class="fab fa-whatsapp" style="color: #10e65e;"></i> <strong style="color: #10e65e;">WhatsApp</strong>
+                            <i class="fab fa-whatsapp"></i> <strong>WhatsApp</strong>
                             <i class="fas fa-ellipsis-h"></i>
                         </a>
 
                         <!-- Telegram -->
                         <a href="https://t.me/username" target="_blank" class="btn btn-info">
-                            <i class="fab fa-telegram" style="color: #0088cc;"></i> <strong style="color: #0088cc;">Telegram</strong>
+                            <i class="fab fa-telegram"></i> <strong>Telegram</strong>
                             <i class="fas fa-ellipsis-h"></i>
                         </a>
                         
                         <!-- Facebook -->
                         <a href="https://www.facebook.com/yourprofile" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-facebook" style="color: #3b5998;"></i> <strong style="color: #3b5998;">Facebook</strong>
+                            <i class="fab fa-facebook"></i> <strong>Facebook</strong>
                             <i class="fas fa-ellipsis-h"></i>
                         </a>
                     </div>
