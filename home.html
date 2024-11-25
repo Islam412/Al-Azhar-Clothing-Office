@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب الازهر</title>
+    <title>مكتب الأزهر</title>
     <link rel="icon" href="img/img.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #e9ecef; /* تغيير خلفية الصفحة */
             color: #212529;
+            font-family: 'Arial', sans-serif; /* تغيير نوع الخط */
             animation: fadeIn 2s ease-in;
+        }
+
+        h1, h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* تغيير نوع الخط للعناوين */
         }
 
         /* Custom Style for Buttons */
         .btn {
-            font-size: 24px;
-            padding: 15px 30px;  /* Increase button size */
+            font-size: 20px;
+            padding: 18px 40px;  /* زيادة حجم الأزرار */
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            border-radius: 50px; /* جعل الأزرار دائرية */
         }
 
-        /* Light Mode Specific */
         .btn-success {
             background-color: #28a745;
             border-color: #28a745;
@@ -86,25 +91,27 @@
             height: 202.4px;
             border-radius: 50%;
             object-fit: cover;
+            border: 5px solid #007bff; /* إضافة حدود للصورة */
         }
 
         /* Icon Size Adjustment */
         .fab {
-            font-size: 35px;
+            font-size: 40px; /* تغيير حجم الأيقونات */
         }
 
         /* Style for the circular social media icons */
         .social-media-icon {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            font-size: 30px;
+            font-size: 35px;
             color: white;
             text-decoration: none;
             transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
         }
 
         /* Specific colors for social icons */
@@ -115,7 +122,7 @@
         /* Add hover effects */
         .social-media-icon:hover {
             opacity: 0.8;
-            transform: scale(1.1); /* Slightly enlarge on hover */
+            transform: scale(1.2); /* تكبير الأيقونات عند التمرير عليها */
         }
 
         /* Fade-in animation for image */
@@ -164,33 +171,25 @@
                         <!-- WhatsApp -->
                         <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success">
                             <i class="fab fa-whatsapp"></i> WhatsApp
-                            <i class="fas fa-ellipsis-h"></i> <!-- Three dots for "Share" -->
-                        </a>
-
-                        <a href="https://wa.me/1237890" target="_blank" class="btn btn-success">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                            <i class="fas fa-ellipsis-h"></i> <!-- Three dots for "Share" -->
+                            <i class="fas fa-ellipsis-h"></i>
                         </a>
 
                         <!-- Telegram -->
                         <a href="https://t.me/username" target="_blank" class="btn btn-info">
                             <i class="fab fa-telegram"></i> Telegram
-                            <i class="fas fa-ellipsis-h"></i> <!-- Three dots for "Share" -->
+                            <i class="fas fa-ellipsis-h"></i>
                         </a>
                         
                         <!-- Facebook -->
                         <a href="https://www.facebook.com/yourprofile" target="_blank" class="btn btn-primary">
                             <i class="fab fa-facebook"></i> Facebook
-                            <i class="fas fa-ellipsis-h"></i> <!-- Three dots for "Share" -->
+                            <i class="fas fa-ellipsis-h"></i>
                         </a>
                     </div>
 
                     <!-- Circular Social Media Icons -->
                     <div class="mt-5 d-flex justify-content-center gap-4">
                         <a href="https://wa.me/1234567890" target="_blank" class="social-media-icon whatsapp-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="https://wa.me/12345" target="_blank" class="social-media-icon whatsapp-icon">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <a href="https://t.me/username" target="_blank" class="social-media-icon telegram-icon">
